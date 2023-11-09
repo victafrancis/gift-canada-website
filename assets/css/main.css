@@ -3372,3 +3372,8 @@ input, select, textarea {
         /* Additional styles if needed */
     }
 }
+
+.image-fit {
+	max-width: 100%;
+	height: auto;
+}
