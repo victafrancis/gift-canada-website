@@ -97,7 +97,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #7c8081;
+		color: #5A5D5E;
 		font-family: 'Lato', sans-serif;
 		font-size: 15pt;
 		font-weight: 300;
@@ -2117,7 +2117,7 @@ input, select, textarea {
 			}
 
 			table.default thead {
-				background: #7c8081;
+				background: #5A5D5E;
 				color: #fff;
 			}
 
@@ -2526,7 +2526,7 @@ input, select, textarea {
 	#banner {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #645862;
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/sun.jpg");
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/sunplant.jpg");
 		background-position: bottom left, bottom right, top left, top center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		background-size: 25em, 25em, auto, cover;
@@ -2624,7 +2624,7 @@ input, select, textarea {
 	#cta {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #645862;
-		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../../images/sun.jpg");
+		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../../images/sunplant.jpg");
 		background-position: top left, top right, top left, bottom center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		background-size: 25em, 25em, auto, cover;
@@ -2641,7 +2641,7 @@ input, select, textarea {
 
 	#footer {
 		background: #E8EEF4;
-		color: #7c8081;
+		color: #5A5D5E;
 		padding: 5em 5em 10em 5em;
 		text-align: center;
 	}
@@ -3376,4 +3376,53 @@ input, select, textarea {
 .image-fit {
 	max-width: 100%;
 	height: auto;
+}
+
+.video-thumbnail {
+    position: relative;
+    display: inline-block; /* Or block if you prefer */
+    cursor: pointer; /* Changes the mouse cursor to indicate it's clickable */
+}
+
+.video-thumbnail img {
+    width: 100%; /* Or the width you prefer */
+    display: block;
+}
+
+.video-thumbnail .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 64px; /* Size of the play button */
+    color: red; /* Color of the play button */
+    transform: translate(-50%, -50%);
+    pointer-events: none; /* Makes sure the click goes through to the link */
+}
+
+.email-link {
+	color: #3498db; /* Blue color for links */
+	text-decoration: none; /* No underline */
+	padding: 5px 10px;
+	border-radius: 5px;
+	background-color: #f1f1f1; /* Light grey background */
+	display: inline-block;
+	transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.email-link:hover {
+	background-color: #3498db; /* Blue background on hover */
+	color: white; /* White text on hover */
+	text-decoration: none; /* Ensures text decoration doesn't change on hover */
+}
+
+.email-link i {
+	margin-right: 5px; /* Space between the icon and the text */
+}
+
+hr {
+	border: none; /* Remove the default border */
+	height: 1px; /* Set the height of the line */
+	background-color: white; /* Set the line color to white */
+	margin-top: 20px; /* Space above the line */
+	margin-bottom: 20px; /* Space below the line */
 }
