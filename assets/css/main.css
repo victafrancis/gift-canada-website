@@ -3346,6 +3346,12 @@ input, select, textarea {
     display: block; /* Display logo as a block element */
     margin: 0 auto; /* Center the logo horizontally */
 }
+.small-logo {
+    max-width: 100px; /* Sets the maximum width of the small logo */
+    height: auto; /* Maintain the aspect ratio of the logo */
+    display: block; /* Display logo as a block element */
+    margin: auto; /* Add some vertical space and center the logo horizontally */
+}
 
 /* You can use media queries to apply different styles based on the screen size */
 
@@ -3425,4 +3431,53 @@ hr {
 	background-color: white; /* Set the line color to white */
 	margin-top: 20px; /* Space above the line */
 	margin-bottom: 20px; /* Space below the line */
+}
+
+  /* Add new styles here if necessary */
+.acts-section {
+	margin-bottom: 20px;
+}
+.acts-heading {
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.acts-content {
+	font-size: 18px;
+}
+.acts-footer {
+	text-align: center;
+	margin-top: 50px;
+	font-style: italic;
+}
+
+#footer {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    /* Add any additional styling for your footer here */
+}
+
+#nav-footer ul {
+    list-style: none;
+	padding: 20px 0 40px 0; /* Added more padding at the bottom */
+    margin: 0;
+    /* Add any additional styling for your list here */
+}
+
+#nav-footer ul li {
+    display: inline-block; /* This makes the list items align horizontally */
+    margin-right: 20px; /* This adds spacing between the items. Adjust as needed. */
+    /* Add any additional styling for your list items here */
+}
+
+#nav-footer ul li a {
+    text-decoration: none;
+    color: black; /* Adjust the color as needed */
+    /* Add any additional link styling here */
+}
+
+/* Additional styles to ensure the last item doesn't have extra margin on the right */
+#nav-footer ul li:last-child {
+    margin-right: 0;
 }
