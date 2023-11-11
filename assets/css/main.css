@@ -3443,7 +3443,8 @@ hr {
 	margin-bottom: 10px;
 }
 .acts-content {
-	font-size: 18px;
+	font-size: 20px;
+	color: black;
 }
 .acts-footer {
 	text-align: center;
