@@ -1,0 +1,100 @@
+/* Ensure the donate-page has a light background and adequate padding */
+.donate-page {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+/* Section Header */
+.section-header .section-title {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333333;
+    font-weight: 700;
+}
+
+.section-header h3 {
+    font-size: 1.2em;
+    text-align: center;
+    color: #555555;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+/* Donation Container Styles with Flexbox */
+.row {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Align vertically if needed */
+    flex-wrap: wrap; /* Ensure wrapping on small screens */
+}
+
+/* Ensure equal width for each donation container */
+.donation-container {
+    flex: 0 0 45%;
+    max-width: 45%;
+    margin: 15px;
+}
+
+/* Donation Box */
+.donation-box {
+    background: #ffffff;
+    padding: 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: auto; /* Let the height be flexible */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space the content evenly */
+}
+
+.donation-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.donation-box h3 {
+    font-size: 1.8em;
+    color: #333333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Donate Button */
+.donate-button {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 1.1em;
+    background-color: #3C424D;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.donate-button:hover,
+.donate-button:focus {
+    background-color: #6b5c60;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.donate-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    .donation-container {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
