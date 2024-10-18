@@ -1,5 +1,7 @@
 CHANGELOG
 =========
+## _2024/10/18
+- Updated donation page
 ## _2024/10/17
 - Added donation page which includes Canada donation
 - Updated donation page links

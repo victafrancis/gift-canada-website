@@ -91,6 +91,40 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Style for the donation instructions */
+.donation-instructions {
+    background-color: #f9f9f9; /* Light background to make it stand out */
+    padding: 20px; /* Padding around the content */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    border: 1px solid #e0e0e0; /* Light border to define the box */
+    color: #333333; /* Dark grey text color for readability */
+    font-size: 1.1em; /* Slightly larger font size */
+    line-height: 1.6; /* Space between lines for better readability */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Style for the donation list */
+.donation-instructions ol {
+    padding-left: 20px; /* Left padding for ordered list */
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+/* Style for list items */
+.donation-instructions ol li {
+    margin-bottom: 10px; /* Space between each list item */
+}
+
+/* Style for email link */
+.donation-instructions a.email-link {
+    color: #806C69; /* Match the button color */
+    text-decoration: underline; /* Underline to make it clear it's a link */
+}
+
+.donation-instructions a.email-link:hover {
+    color: #6b5c60; /* Darker shade on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+
 /* Responsive Adjustments */
 @media (max-width: 767px) {
     .donation-container {
