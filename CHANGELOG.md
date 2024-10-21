@@ -1,5 +1,7 @@
 CHANGELOG
 =========
+## _2024/10/21
+- Minor wording update on donation page
 ## _2024/10/18
 - Updated donation page
 ## _2024/10/17
