@@ -112,6 +112,9 @@
                     contentContainer.innerHTML = newContent;
                 }
 
+                // Scroll to top of the page
+                window.scrollTo(0, 0);
+
                 // Update page title
                 const title = this.extractTitle(html);
                 if (title) {
