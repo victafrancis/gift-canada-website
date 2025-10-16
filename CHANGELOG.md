@@ -2,13 +2,13 @@ CHANGELOG
 =========
 ## _2025/10/16
 - **MAJOR UPDATE**: Implemented clean URLs (removed .html extensions) for professional appearance
-  - Added client-side JavaScript routing system (`assets/js/router.js`)
-  - Created 404.html fallback for direct clean URL visits on GitHub Pages
-  - Updated all internal navigation links to use clean URLs (/donate, /mission, /get-involved)
-  - Added router.js script to all HTML files for dynamic content loading
-  - Maintained backward compatibility - old .html links still work
-  - Future pages automatically get clean URLs without additional configuration
-  - Improved professional appearance for charity organization
+- Added client-side JavaScript routing system (`assets/js/router.js`)
+- Created 404.html fallback for direct clean URL visits on GitHub Pages
+- Updated all internal navigation links to use clean URLs (/donate, /mission, /get-involved)
+- Added router.js script to all HTML files for dynamic content loading
+- Maintained backward compatibility - old .html links still work
+- Future pages automatically get clean URLs without additional configuration
+- Improved professional appearance for charity organization
 ## _2025/10/07
 - Updated site for SEO optimization and google search
 - Flipped hero banner
