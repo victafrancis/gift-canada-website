@@ -3030,7 +3030,8 @@ input, select, textarea {
 						content: '\f0c9';
 						font-size: 1em;
 						height: 40px;
-						left: 10px;
+						right: 10px;
+						left: auto;
 						line-height: 40px;
 						opacity: 0.5;
 						position: absolute;
@@ -3044,40 +3045,43 @@ input, select, textarea {
 						border-radius: 2px;
 						content: '';
 						height: 40px;
-						left: 10px;
+						right: 10px;
+						left: auto;
 						position: absolute;
 						top: 10px;
 						width: 60px;
 					}
 
-			#navPanel {
-				-moz-backface-visibility: hidden;
-				-webkit-backface-visibility: hidden;
-				-ms-backface-visibility: hidden;
-				backface-visibility: hidden;
-				-moz-transform: translateX(-275px);
-				-webkit-transform: translateX(-275px);
-				-ms-transform: translateX(-275px);
-				transform: translateX(-275px);
-				-moz-transition: -moz-transform 0.5s ease;
-				-webkit-transition: -webkit-transform 0.5s ease;
-				-ms-transition: -ms-transform 0.5s ease;
-				transition: transform 0.5s ease;
-				display: block;
-				height: 100%;
-				left: 0;
-				overflow-y: auto;
-				position: fixed;
-				top: 0;
-				width: 275px;
-				z-index: 10002;
-				background: #1c2021;
-				color: #fff;
-				font-size: 0.8em;
-				letter-spacing: 0.075em;
-				text-transform: uppercase;
-				padding: 0.25em 0.75em 1em 0.75em;
-			}
+#navPanel {
+	-moz-backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-transform: translateX(150px);
+	-webkit-transform: translateX(150px);
+	-ms-transform: translateX(150px);
+	transform: translateX(150px);
+	-moz-transition: -moz-transform 0.5s ease;
+	-webkit-transition: -webkit-transform 0.5s ease;
+	-ms-transition: -ms-transform 0.5s ease;
+	transition: transform 0.5s ease;
+	display: block;
+	height: 100%;
+	right: 0;
+	left: auto;
+	overflow-y: auto;
+	position: fixed;
+	top: 0;
+	width: 150px;
+	z-index: 10002;
+	background: #1c2021;
+	color: #fff;
+	font-size: 0.8em;
+	letter-spacing: 0.075em;
+	text-transform: uppercase;
+	padding: 0.25em 0.75em 1em 0.75em;
+	text-align: right;
+}
 
 				#navPanel .link {
 					border: 0;
@@ -3124,17 +3128,17 @@ input, select, textarea {
 				}
 
 			body.navPanel-visible #page-wrapper {
-				-moz-transform: translateX(275px);
-				-webkit-transform: translateX(275px);
-				-ms-transform: translateX(275px);
-				transform: translateX(275px);
+				-moz-transform: translateX(-150px);
+				-webkit-transform: translateX(-150px);
+				-ms-transform: translateX(-150px);
+				transform: translateX(-150px);
 			}
 
 			body.navPanel-visible #navButton {
-				-moz-transform: translateX(275px);
-				-webkit-transform: translateX(275px);
-				-ms-transform: translateX(275px);
-				transform: translateX(275px);
+				-moz-transform: translateX(-150px);
+				-webkit-transform: translateX(-150px);
+				-ms-transform: translateX(-150px);
+				transform: translateX(-150px);
 			}
 
 			body.navPanel-visible #navPanel {
@@ -3335,7 +3339,8 @@ input, select, textarea {
 
 			#navButton .toggle:before {
 				top: 8px;
-				left: 8px;
+				right: 8px;
+				left: auto;
 				width: 50px;
 				height: 34px;
 				line-height: 34px;
@@ -3343,7 +3348,8 @@ input, select, textarea {
 
 			#navButton .toggle:after {
 				top: 8px;
-				left: 8px;
+				right: 8px;
+				left: auto;
 				width: 50px;
 				height: 34px;
 			}

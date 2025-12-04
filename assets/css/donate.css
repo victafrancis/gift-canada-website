@@ -17,7 +17,7 @@
     font-size: 1.2em;
     text-align: center;
     color: #555555;
-    margin-bottom: 40px;
+    margin: 0 1.5rem 40px;
     font-weight: 400;
 }
 
@@ -43,7 +43,7 @@
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: auto; /* Let the height be flexible */
     display: flex;
@@ -61,6 +61,7 @@
     color: #333333;
     margin-bottom: 20px;
     font-weight: 600;
+    text-align: center;
 }
 
 /* Donate Button */
@@ -77,6 +78,7 @@
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .donate-button:hover,
@@ -125,10 +127,25 @@
     text-decoration: none; /* Remove underline on hover */
 }
 
+.donation-instructions ul {
+    text-align: left;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 767px) {
     .donation-container {
         flex: 0 0 100%;
         max-width: 100%;
     }
+}
+
+/* Tax Receipt Warning Box */
+.tax-receipt-warning {
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    text-align: left;
+    color: #856404;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
 }

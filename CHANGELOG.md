@@ -1,5 +1,8 @@
 CHANGELOG
 =========
+## _2025/12/04
+- Updated donation page to include imprtant information on Gift Tax Receipts
+- Fixed CSS on donation page and hamburger menu on mobile
 ## _2025/10/16
 - **MAJOR UPDATE**: Implemented clean URLs (removed .html extensions) for professional appearance
 - Added client-side JavaScript routing system (`assets/js/router.js`)
