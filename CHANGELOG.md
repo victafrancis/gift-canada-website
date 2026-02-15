@@ -1,5 +1,7 @@
 CHANGELOG
 =========
+## _2026/02/15
+- Added MailierLite email subscribe embedded form
 ## _2025/12/04
 - Updated donation page to include imprtant information on Gift Tax Receipts
 - Fixed CSS on donation page and hamburger menu on mobile
