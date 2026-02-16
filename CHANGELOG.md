@@ -1,5 +1,9 @@
 CHANGELOG
 =========
+## _2026/02/16
+- Added `Newsletter` section
+- Added `Meet the General Director` section
+- Updated Contact section to make it more visible and added address details
 ## _2026/02/15
 - Added MailierLite email subscribe embedded form
 ## _2025/12/04
