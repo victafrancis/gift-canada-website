@@ -111,8 +111,8 @@
             </div>
 
             <div class="row">
-                <!-- Other Container -->
-                <div class="col-md-6 col-sm-12 donation-container">
+                <!-- Simple Ways to Donate -->
+                <div class="col-md-4 col-sm-12 donation-container">
                     <div class="donation-box wow fadeInLeft">
                         <h3>Simple Ways to Donate</h3>
                         <div class="donation-instructions">
@@ -120,7 +120,7 @@
                                 <li style="margin-bottom: 20px;">
                                     <u>E-Transfer Donation</u>: Recipient - <b>Gateway International Fellowship of Toronto</b><br>
                                     Email: <b>gifttoronto.org@gmail.com</b><br>
-                                    
+
                                     <div class="tax-receipt-warning">
                                         <strong>⚠️ IMPORTANT FOR TAX RECEIPTS:</strong>
                                         <p style="margin: 5px 0 10px 0;">
@@ -146,23 +146,26 @@
                     </div>
                 </div>
 
-                <!-- Canada Donation Container -->
-                <div class="col-md-6 col-sm-12 donation-container">
+                <!-- Right column: PayPal + Canada stacked -->
+                <div class="donation-column-right">
+                    <div class="donation-box wow fadeInRight">
+                        <h3>Donate via PayPal</h3>
+                        <div id="donate-button-container">
+                            <div id="donate-button"></div>
+                        </div>
+                    </div>
+
                     <div class="donation-box wow fadeInRight">
                         <h3>Donate from Canada</h3>
                         <div class="donation-instructions">
                             Donate by credit or debit card securely.
                         </div>
-                        <a href="https://www.canadahelps.org/en/charities/gateway-international-fellowship-of-toronto/" 
-                            class="btn donate-button" 
-                            target="_blank" 
+                        <a href="https://www.canadahelps.org/en/charities/gateway-international-fellowship-of-toronto/"
+                            class="btn donate-button"
+                            target="_blank"
                             aria-label="Donate via Canada Helps">
                             Donate via Canada Helps
                         </a>
-                        <!-- Optional: Additional Links -->
-                        <!--
-                        <a href="#" class="additional-link">Learn More</a>
-                        -->
                     </div>
                 </div>
             </div>
@@ -180,5 +183,20 @@
     <script src="js/jquery.inview.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- PayPal Donation SDK -->
+    <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+    <script>
+        PayPal.Donation.Button({
+            env: 'production',
+            hosted_button_id: 'LJMSQ2AQDEALC',
+            image: {
+                src: 'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
+                alt: 'Donate with PayPal button',
+                title: 'PayPal - The safer, easier way to pay online!',
+            }
+        }).render('#donate-button');
+    </script>
+
 </body>
 </html>

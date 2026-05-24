@@ -1,5 +1,7 @@
 CHANGELOG
 =========
+## _2026/05/24
+- Added PayPal donation button to donation page
 ## _2026/02/16
 - Added `Newsletter` section
 - Added `Meet the General Director` section

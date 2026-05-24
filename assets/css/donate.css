@@ -131,12 +131,32 @@
     text-align: left;
 }
 
+/* Right column: stacked PayPal + Canada boxes */
+.donation-column-right {
+    flex: 0 0 45%;
+    max-width: 45%;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-self: flex-start;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 767px) {
-    .donation-container {
+    .donation-container,
+    .donation-column-right {
         flex: 0 0 100%;
         max-width: 100%;
     }
+}
+
+/* Center the PayPal rendered button */
+#donate-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
 }
 
 /* Tax Receipt Warning Box */
