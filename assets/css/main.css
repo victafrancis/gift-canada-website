@@ -3642,3 +3642,18 @@ hr {
 		height: 1.85em;
 	}
 }
+
+/* Donate nav pill button */
+#header nav ul li.nav-donate > a {
+	background-color: #C0392B;
+	color: #ffffff !important;
+	border-radius: 20px;
+	padding: 0.5em 1.1em;
+	font-weight: 700;
+	transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+#header nav ul li.nav-donate > a:hover {
+	background-color: #a93226;
+	transform: translateY(-1px);
+}
