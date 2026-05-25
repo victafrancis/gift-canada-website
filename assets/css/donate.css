@@ -1,3 +1,9 @@
+/* Hide JS-injected hamburger menu on the donate page */
+.donate-page #navButton,
+.donate-page #navPanel {
+    display: none;
+}
+
 /* Ensure the donate-page has a light background and adequate padding */
 .donate-page {
     background-color: #f9f9f9;
@@ -25,7 +31,7 @@
 .donation-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: 40px;
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -128,9 +134,9 @@
 /* Payment logos (PayPal, Interac) */
 .payment-logo {
     display: block;
-    max-width: 180px;
-    max-height: 60px;
-    margin: 12px auto 20px;
+    max-width: 150px;
+    max-height: 52px;
+    margin: 0 auto 16px;
     object-fit: contain;
 }
 
@@ -139,6 +145,11 @@
     .donation-grid {
         grid-template-columns: 1fr;
     }
+
+    #donate-button img {
+        width: 220px;
+        height: auto;
+    }
 }
 
 /* Center the PayPal rendered button */
@@ -146,7 +157,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1;
+    margin-top: 20px;
 }
 
 /* Tax Receipt Warning Box */
