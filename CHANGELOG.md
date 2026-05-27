@@ -1,5 +1,9 @@
 CHANGELOG
 =========
+## _2026/05/26
+- Redesigned donation cards to match Camp Moses style: clean header/content split, warm brown border, icons for Canada Helps and Cheque cards
+- Added Canada Helps logo to the Canada Helps donation card
+
 ## _2026/05/24
 - Added PayPal donation button to donation page
 ## _2026/02/16

@@ -3645,7 +3645,7 @@ hr {
 
 /* Donate nav pill button */
 #header nav ul li.nav-donate > a {
-	background-color: #3c424d;
+	background-color: #16a34a;
 	color: #ffffff !important;
 	border-radius: 20px;
 	padding: 0.5em 1.1em;
@@ -3654,6 +3654,6 @@ hr {
 }
 
 #header nav ul li.nav-donate > a:hover {
-	background-color: #555c6b;
+	background-color: #15803d;
 	transform: translateY(-1px);
 }
