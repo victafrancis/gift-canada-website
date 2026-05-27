@@ -105,10 +105,12 @@
             <div class="donation-grid">
                 <!-- Card 1: Donate via PayPal -->
                 <div class="donation-box wow fadeInUp">
-                    <img src="./images/paypal-logo.png" alt="PayPal" class="payment-logo">
-                    <h3>Donate via PayPal</h3>
-                    <div class="donation-instructions">
-                        <p>Donate quickly and securely using PayPal</p>
+                    <div class="donation-card-header">
+                        <img src="./images/paypal-logo.png" alt="PayPal" class="payment-logo">
+                        <h3>Donate via PayPal</h3>
+                        <p class="donation-card-desc">Donate quickly and securely using PayPal</p>
+                    </div>
+                    <div class="donation-card-content">
                         <p>Use your PayPal account or any major credit or debit card to give securely online.</p>
                         <div id="donate-button-container">
                             <div id="donate-button"></div>
@@ -118,49 +120,82 @@
 
                 <!-- Card 2: Donate from Canada -->
                 <div class="donation-box wow fadeInUp">
-                    <h3>Donate from Canada</h3>
-                    <div class="donation-instructions">
-                        Donate by credit or debit card securely.
+                    <div class="donation-card-header">
+                        <img src="./images/canada-helps-logo.png" alt="Canada Helps" class="payment-logo">
+                        <h3>Canada Helps</h3>
+                        <p class="donation-card-desc">Donate by credit or debit card</p>
                     </div>
-                    <a href="https://www.canadahelps.org/en/charities/gateway-international-fellowship-of-toronto/"
-                        class="btn donate-button"
-                        target="_blank"
-                        aria-label="Donate via Canada Helps">
-                        Donate via Canada Helps
-                    </a>
+                    <div class="donation-card-content">
+                        <p>Give securely online through Canada Helps — a trusted Canadian giving platform.</p>
+                        <a href="https://www.canadahelps.org/en/charities/gateway-international-fellowship-of-toronto/"
+                            class="btn donate-button"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Donate via Canada Helps">
+                            Donate via Canada Helps
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Card 3: E-Transfer Donation -->
                 <div class="donation-box wow fadeInUp">
-                    <img src="./images/interac-etransfer-logo.png" alt="Interac e-Transfer" class="payment-logo">
-                    <h3>E-Transfer Donation</h3>
-                    <div class="donation-instructions">
-                        Recipient - <b>Gateway International Fellowship of Toronto</b><br>
-                        Email: <b>gifttoronto.org@gmail.com</b>
-
+                    <div class="donation-card-header">
+                        <img src="./images/interac-etransfer-logo.png" alt="Interac e-Transfer" class="payment-logo">
+                        <h3>E-Transfer Donation</h3>
+                        <p class="donation-card-desc">Send funds via Interac e-Transfer</p>
+                    </div>
+                    <div class="donation-card-content">
+                        <div class="donation-field">
+                            <p class="donation-field-label">Recipient:</p>
+                            <p class="donation-field-value">Gateway International Fellowship of Toronto</p>
+                        </div>
+                        <div class="donation-field">
+                            <p class="donation-field-label">Email Address:</p>
+                            <p class="donation-field-value">gifttoronto.org@gmail.com</p>
+                        </div>
                         <div class="tax-receipt-warning">
-                            <strong>⚠️ IMPORTANT FOR TAX RECEIPTS:</strong>
-                            <p style="margin: 5px 0 10px 0;">
-                                In the <b>Message/Memo</b> field of your e-Transfer, you <u>MUST</u> include your:
-                            </p>
-                            <ul style="margin-top: 5px; margin-bottom: 10px; padding-left: 20px;">
-                                <li>Full Name</li>
-                                <li>Email Address</li>
-                                <li>Home Address</li>
-                            </ul>
-                            <p style="margin: 0; font-size: 0.95em;">
-                                <i>We need this information to issue your tax-deductible receipt. Without it, we cannot send your receipt.</i>
-                            </p>
+                            <div class="tax-warning-inner">
+                                <span class="tax-warning-emoji">⚠️</span>
+                                <div>
+                                    <p class="tax-warning-title">Tax Receipt Information</p>
+                                    <p>Please include the following in the <strong>Message/Memo</strong> field so we can issue your tax receipt:</p>
+                                    <ul>
+                                        <li>Full Name</li>
+                                        <li>Email Address</li>
+                                        <li>Home Address</li>
+                                    </ul>
+                                    <p><em>We kindly ask for this information to send your tax-deductible receipt.</em></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 4: Cheque Donation -->
                 <div class="donation-box wow fadeInUp">
-                    <h3>Cheque Donation</h3>
-                    <div class="donation-instructions">
-                        Issue your donation cheque to <b>Gateway International Fellowship of Toronto (GIFT)</b>.<br>
-                        Mail it to: <b>27 Coltman Cres. Scarborough, Ontario Canada M1B 2A3</b>
+                    <div class="donation-card-header">
+                        <i class="fas fa-file-alt donation-card-icon"></i>
+                        <h3>Cheque Donation</h3>
+                        <p class="donation-card-desc">Mail your donation by cheque</p>
+                    </div>
+                    <div class="donation-card-content">
+                        <div class="donation-field">
+                            <p class="donation-field-label">Make cheques payable to:</p>
+                            <p class="donation-field-value">Gateway International Fellowship of Toronto (GIFT)</p>
+                        </div>
+                        <div class="donation-field">
+                            <p class="donation-field-label">Mail to:</p>
+                            <p class="donation-field-value">27 Coltman Cres.<br>Scarborough, Ontario<br>Canada M1B 2A3</p>
+                        </div>
+                        <div class="tax-receipt-warning">
+                            <div class="tax-warning-inner">
+                                <span class="tax-warning-emoji">⚠️</span>
+                                <div>
+                                    <p class="tax-warning-title">Tax Receipt Information</p>
+                                    <p>Please include your <strong>Full Name, Email Address, and Home Address</strong> on a note with your cheque so we can issue your tax receipt.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

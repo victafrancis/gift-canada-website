@@ -31,7 +31,7 @@
 .donation-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    gap: 32px;
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -39,105 +39,175 @@
 /* Donation Box */
 .donation-box {
     background: #ffffff;
-    padding: 30px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #8B6F47;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
     text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: auto; /* Let the height be flexible */
+    transition: box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Space the content evenly */
+    overflow: hidden;
 }
 
 .donation-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.13);
+}
+
+/* Card header: icon/logo + title + description */
+.donation-card-header {
+    padding: 28px 28px 20px;
+    border-bottom: 1px solid #f0ebe4;
+}
+
+.donation-card-icon {
+    font-size: 3rem;
+    color: #3c424d;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.payment-logo {
+    display: block;
+    max-width: 150px;
+    max-height: 48px;
+    margin-bottom: 16px;
+    object-fit: contain;
 }
 
 .donation-box h3 {
-    font-size: 1.8em;
+    font-size: 1.25em;
+    color: #3c424d;
+    margin-bottom: 6px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.donation-card-desc {
+    font-size: 0.95em;
+    color: #6b7280;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Card content */
+.donation-card-content {
+    padding: 24px 28px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+    font-size: 1em;
     color: #333333;
-    margin-bottom: 20px;
-    font-weight: 600;
-    text-align: center;
+    line-height: 1.6;
+}
+
+/* Labeled field sections (e-transfer, cheque) */
+.donation-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.donation-field-label {
+    font-weight: 700;
+    font-size: 1em;
+    color: #333333;
+    margin: 0;
+}
+
+.donation-field-value {
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-weight: 500;
+    color: #333333;
+    margin: 0;
+    line-height: 1.6;
 }
 
 /* Donate Button */
 .donate-button {
     display: block;
     width: 100%;
-    padding: 15px 0;
-    font-size: 1.1em;
+    padding: 14px 0;
+    font-size: 1.05em;
+    font-weight: 600;
     background-color: #3C424D;
     color: #ffffff;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     text-decoration: none;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease;
     text-align: center;
+    margin-top: auto;
 }
 
 .donate-button:hover,
 .donate-button:focus {
-    background-color: #6b5c60;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    background-color: #555c6b;
+    color: #ffffff;
+    text-decoration: none;
 }
 
-.donate-button:active {
-    transform: translateY(0);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+/* Center the PayPal rendered button */
+#donate-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
 }
 
-/* Style for the donation instructions */
-.donation-instructions {
-    background-color: #f9f9f9; /* Light background to make it stand out */
-    padding: 20px; /* Padding around the content */
-    border-radius: 8px; /* Rounded corners for a softer look */
-    border: 1px solid #e0e0e0; /* Light border to define the box */
-    color: #333333; /* Dark grey text color for readability */
-    font-size: 1.1em; /* Slightly larger font size */
-    line-height: 1.6; /* Space between lines for better readability */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+/* Tax Receipt Warning Box */
+.tax-receipt-warning {
+    background-color: #fef2f2;
+    border: 2px solid #fecaca;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 4px;
 }
 
-/* Style for the donation list */
-.donation-instructions ol {
-    padding-left: 20px; /* Left padding for ordered list */
-    margin-bottom: 0; /* Remove bottom margin */
+.tax-warning-inner {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
 }
 
-/* Style for list items */
-.donation-instructions ol li {
-    margin-bottom: 10px; /* Space between each list item */
+.tax-warning-emoji {
+    font-size: 1.4rem;
+    flex-shrink: 0;
+    line-height: 1.4;
 }
 
-/* Style for email link */
-.donation-instructions a.email-link {
-    color: #806C69; /* Match the button color */
-    text-decoration: underline; /* Underline to make it clear it's a link */
+.tax-receipt-warning .tax-warning-title {
+    font-weight: 700;
+    font-size: 0.95em;
+    color: #991b1b;
+    margin: 0 0 6px 0;
 }
 
-.donation-instructions a.email-link:hover {
-    color: #6b5c60; /* Darker shade on hover */
-    text-decoration: none; /* Remove underline on hover */
+.tax-receipt-warning p {
+    color: #7f1d1d;
+    font-size: 0.9em;
+    line-height: 1.55;
+    margin: 0 0 6px 0;
 }
 
-.donation-instructions ul {
-    text-align: left;
+.tax-receipt-warning p:last-child {
+    margin-bottom: 0;
 }
 
-/* Payment logos (PayPal, Interac) */
-.payment-logo {
-    display: block;
-    max-width: 150px;
-    max-height: 52px;
-    margin: 0 auto 16px;
-    object-fit: contain;
+.tax-receipt-warning ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 4px 0 8px;
+    color: #7f1d1d;
+    font-size: 0.9em;
+}
+
+.tax-receipt-warning ul li {
+    margin-bottom: 2px;
 }
 
 /* Responsive: single column on mobile */
@@ -150,23 +220,4 @@
         width: 220px;
         height: auto;
     }
-}
-
-/* Center the PayPal rendered button */
-#donate-button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-/* Tax Receipt Warning Box */
-.tax-receipt-warning {
-    background-color: #fff3cd;
-    border: 1px solid #ffeeba;
-    text-align: left;
-    color: #856404;
-    padding: 15px;
-    border-radius: 5px;
-    margin-top: 10px;
 }
